@@ -1,4 +1,3 @@
-
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -88,9 +87,11 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
-a{
+
+a {
   color: green;
 }
+
 h1,
 h2,
 h3,
@@ -474,6 +475,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+
+
 
   .about__data,
   .about__initial,
