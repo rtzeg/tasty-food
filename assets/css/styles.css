@@ -157,6 +157,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  
 }
 
 /*========== NAV ==========*/
@@ -166,6 +167,71 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.burg_menu{
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  
+}
+.item{ 
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+.top{
+ 
+  top: 0;
+}
+.top_active {
+  top: 50%;
+  transform: rotate(45deg);
+
+}
+.mid{
+  top:50%;
+}
+.mid_active{
+  display: none;
+}
+.bot{
+  top:100%;
+}
+.bot_active{
+  top: 50%;
+  transform: rotate(-45deg);
+}
+/*========== LOGO ==========*/
+.logo {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+.burg_link {
+  width: 30%;
+  background-color: rgba(0, 0, 0, .1);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  position: absolute;
+  left: -30%;
+  transition: all 0.3s ease;
+}
+.burg_lin_active {
+  width: 30%;
+  background-color: rgba(0, 0, 0, .1);
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center; 
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -181,6 +247,10 @@ img {
     box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
+  }
+  .burg_menu {
+    order: 2;
+    display: block;
   }
 }
 
